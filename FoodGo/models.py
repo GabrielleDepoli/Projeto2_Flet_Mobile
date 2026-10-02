@@ -71,7 +71,7 @@ class CartLine:
         """Converte para dicionário simples, usado para salvar em JSON."""
         return {
             "restaurant_id": self.restaurant_id,
-            "item _id": self.item_id,
+            "item_id": self.item_id,
             "name": self.name,
             "price": self.price,
             "emoji": self.emoji,
@@ -100,7 +100,7 @@ class Order:
     created_at: str
     status: str = "Em preparo"
 
-    def to_dictt(self) -> dict:
+    def to_dict(self) -> dict:
         """Converte para dicionário simples, usado para salvar em JSON."""
         return {
             "id": self.id,
@@ -129,7 +129,7 @@ class Order:
 RESTAURANTS: list[Restaurant] = [
     Restaurant(
         id="r1",
-        nam="Pizzaria Bella Massa",
+        name="Pizzaria Bella Massa",
         category="Pizza",
         emoji="🍕",
         rating=4.7,
@@ -204,6 +204,3 @@ RESTAURANTS: list[Restaurant] = [
     ),
 ]
 
-
-
-# 🥓🍟🍣🍜🍤🥗🥣🥤🍰🍫🍨821-1025
